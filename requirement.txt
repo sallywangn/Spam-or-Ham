@@ -1,0 +1,6 @@
+pandas
+flask
+pickle
+mailparser
+bs4
+re
