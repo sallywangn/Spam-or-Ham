@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spam or Ham?</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+
+	<header>
+		<div class="container">
+		    <h3><a href="/">Back</a></h3>
+	    </div>
+	</header>
+        <!-- <div class="container">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXpuMnoxdXN3cWh2MXQ0cWlqYXJzN3B6aWd0NW9jOGwxejFmdW5sNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xSwIOv5FGhZFjq/giphy.gif"/>
+
+            <form action="/predict" method="POST" class="form">
+                <div class="fieldset">
+                    <label>Enter Your Experience Level</label>
+                    <input class="exp" name="exp" maxlength="1000000"/>
+                </div>
+                <input type="submit" class="button" value="predict">
+            </form>
+        </div> -->
+        <table align="center">
+            <thead>
+              <tr>
+                <th colspan="2" align="center"><img src="/static/images/tsne_scatter.png" alt="tSNE scatter plot" width="1000"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="center">
+                <td><h4>Spam Wordcloud</h4><img src="/static/images/wc_spam.png" alt="Wordcloud Spam" width="533" height="300"></td>
+                <td><img src="/static/images/wf_spam.png" alt="Word Frequency Spam" width="533" height="300"></td>
+              </tr>
+              <tr align="center">
+                <td><h4>Non-Spam Wordcloud</h4><img src="/static/images/wc_nonspam.png" alt="Wordcloud Non-Spam" width="533" height="300"></td>
+                <td><img src="/static/images/wf_nonspam.png" alt="Word Frequency Non-Spam" width="533" height="300"></td>
+              </tr>
+            </tbody>
+            </table>
+    </body>
+</html>

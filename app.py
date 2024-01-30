@@ -12,6 +12,7 @@ import pickle
 import mailparser
 from bs4 import BeautifulSoup
 import re
+import os
 
 app = Flask(__name__)
 
@@ -26,13 +27,9 @@ spambase_list = list(spambase_df.iloc[:,0])
 def home():
     return render_template("index.html")
 
-# Additional route created for future use
-# @app.route('/success', methods=['POST'])
-# def success():
-#     if request.method == 'POST':   
-#         f = request.files['file'] 
-#         f.save(f.filename)   
-#         return render_template("acknowledgment.html", name = f.filename)
+@app.route('/viz')
+def viz():
+        return render_template("visuals.html")
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -57,6 +54,7 @@ def predict():
         mail = mailparser.parse_from_file(f.filename)
         print('HTML is', bool(mail.text_html))
         print('Text is', bool(mail.text_plain))
+        os.remove(f.filename) # Remove file once parsed
 
         # Content type check (plain text or HTML)
         # File parse error check (for content type)
