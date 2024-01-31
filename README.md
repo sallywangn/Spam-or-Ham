@@ -1,4 +1,4 @@
-# Spam or Ham Project
+# Spam or Ham Project from Group 8
 
 ## Team Members
 - Malik D.
