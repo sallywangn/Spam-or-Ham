@@ -37,3 +37,5 @@ Our journey included designing accurate models, effective teamwork, and visual s
 Special thanks to Kaggle for datasets, and resources like Google and Stack Overflow for supporting our coding journey.
 
 Thank you for exploring our project!
+
+### [Link to video presentation](https://drive.google.com/file/d/15m59LDb9embHIhUhYJTctoBYuwEiBJ23/view?usp=drive_link)
